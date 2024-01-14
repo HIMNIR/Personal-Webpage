@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="My webpage" content="Resume">
+    <title>Utsav's webpage</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Header+One:wght@700&display=swap" rel="stylesheet">
+	<meta name="viewport" content=“width=device-width, initial-scale=1" />
+
+
+</head>
+
+<body>
+    <a href="#contactForm" class="skip-link">Skip to main content</a>
+    <div class="container">
+        <div class="navbar">
+            <span>
+                UtsavG
+            </span>
+
+           
+            <a href="#contactForm" id="two"> Contact</a>
+
+        </div>
+        <div class="container-item" id="infoTab">
+            <video autoplay controls>
+                <source src="Resources/vid1.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <button onclick="changeVideoSource('Resources/vid2.mp4')">Switch to Video 2</button>
+            <button onclick="changeVideoSource('Resources/vid1.mp4')">Switch to Video 1</button>
+        </div>
+
+        <div class="contact-Container">
+            <div class="contactInfo">
+                <h1>About me</h1>
+
+                <p>
+                    Hello and welcome to my website! My name is Utsav and I'm a BCIS student at MRU in Calgary.
+                    I'm passionate about technology and love exploring new software and applications. When I'm not
+                    studying or working on projects, I enjoy playing Dota 2 and watching soccer. Please review my resume to learn more about my skills. I intend to use this as a project showcase. 
+                    <br>
+                    <br> 
+                    The two videos above showcase my latest personal project, developed during a two-week winter break. I utilized Microsoft's .NET Maui platform, enabling the creation of native cross-platform applications using a single codebase. For additional details, please explore my <a target='_blank' href='https://github.com/HIMNIR/FitnessApp/tree/Second-branch'>GitHub Repository. </a> I will be adding more projects and demos once my school semester is over.
+                    <br>
+                    <br>
+                    Thank you for visiting my site if you want to connect with me please fill up the form beside this
+                    box.
+                    Be sure to include a message name and email so it will be easier for me to seperate your email from
+                    potential scams. If you have any other concerns please feel free to let me know. Feel free to checkout my linkedin and git hub with the links below
+                </p>
+                <a href="https://www.instagram.com/utsav_g_21/" target="_blank"><img id="insta"
+                        src="images/insta.png"></a>
+                <a href="https://www.linkedin.com/in/utsav-gautam-111b901b5/" target="_blank"><img id="linked"
+                        src="images/Linked.jpg"></a>
+            </div>
+            <div class="contactForm" id="contactForm">
+                <form id="formOne" method="post" data-netlify="true">
+
+                    <h1>Contact Me</h1>
+                    <dl>
+                        <dd>
+                            <input id="name" name="Name" placeholder="Name" required>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd>
+                            <input id="phone" type="tel" id="phone" name="phone" placeholder="555-455-7555"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd>
+                            <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                placeholder="name@email.com" required name="email">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd>
+                            <input id="message" type="text" placeholder=" Write me a message" required name="message">
+                        </dd>
+                    </dl>
+                    <input id="submit" type="submit">
+                </form>
+
+            </div>
+         
+            <div class="footer">
+                <footer>
+                    <p>Copyright © 2023 UtsavG</p>
+    
+                </footer>
+            </div>
+        </div>
+    
+        </div>
+    
+
+    </div>
+    </div>
+
+    
+    <script>
+        function changeVideoSource(newSource) {
+            var video = document.querySelector("#infoTab video");
+            var source = document.querySelector("#infoTab video source");
+            source.src = newSource;
+            video.load();
+        }
+    </script>
+</body>
+
+</html>
